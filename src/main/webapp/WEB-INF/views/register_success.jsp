@@ -16,6 +16,7 @@
 </style>
 </head>
 <body>
+<form action="ExamClient.jsp">
  <div align="center">
         <h2>Registration Succeeded!</h2>
         <h3>Your details</h3>
@@ -35,6 +36,11 @@
         <span>position:</span><span>${client.position}</span><br/>
         <h4>We will get Back to you as soon as possible !</h4>
         <h4>Thank You!</h4>
+        <h4>You can take test here...</h4>
+        <div class="form-group">
+						<form: button>Submit</form: button>
+					</div>
     </div>
+    </form>
 </body>
 </html>

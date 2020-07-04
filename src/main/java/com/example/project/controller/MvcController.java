@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import com.example.project.entity.Client;
 import com.example.project.service.ClientService;
  
@@ -27,6 +26,7 @@ public class MvcController {
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String saveClient(@ModelAttribute("client") Client client) {
 		service.save(client);
+		 System.out.println(client);
 	     
 	    return "register_success";
 	}
@@ -40,11 +40,4 @@ public class MvcController {
         return "register_form";
     }
     
-    @PostMapping("/register")
-    public String submitForm(@ModelAttribute("client") Client client) {
-         
-        System.out.println(client);
-         
-        return "register_success";
-    }
 }
