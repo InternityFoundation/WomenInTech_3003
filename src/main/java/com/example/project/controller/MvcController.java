@@ -38,5 +38,9 @@ public class MvcController {
          
         return "register_form";
     }
-    
+     @RequestMapping("/ExamClient")
+     public String showSkill() {
+         
+         return "ExamClient";
+     }
 }

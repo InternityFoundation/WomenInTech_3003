@@ -38,7 +38,8 @@
         <h4>We will get Back to you as soon as possible !</h4>
         <h4>Thank You!</h4>
          <h4>Give your Skill Test here....</h4>
-        <button>Skill Test</button>
+          <a href="/ExamClient">
+        <button>Skill Test</button></a>
         </form>
     </div>
     </form>

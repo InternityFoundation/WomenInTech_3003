@@ -1,10 +1,13 @@
 package com.example.project.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.project.dao.JobDao;
-import com.example.project.entity.PersonalDetails;
+import com.example.project.entity.Client;
 import com.example.project.vo.JobResponseVO;
 
 
@@ -15,12 +18,12 @@ public class JobServiceImpl implements JobService {
 	private JobDao jobDao;
 
 	@Override
-	public JobResponseVO getJobById(long jobId) {
+	public JobResponseVO getJobById(int id) {
 
 		JobResponseVO jobResponseVO = new JobResponseVO();
-	
-		PersonalDetails personalDetails = jobDao.findByJobId(jobId);	
-		if (personalDetails == null) {
+		Client client=null;
+		client = jobDao.findById(id);	
+		if (client == null) {
 			jobResponseVO.setStatus(false);
 			jobResponseVO.setMessage("profile does not exist");
 			jobResponseVO.setData(null);
@@ -28,8 +31,29 @@ public class JobServiceImpl implements JobService {
 		else {
 			jobResponseVO.setStatus(true);
 			jobResponseVO.setMessage("success");
-			jobResponseVO.setData(personalDetails);
+			jobResponseVO.setData(client);
 		}
 		return jobResponseVO;
 	}
+	
+	@Override
+	public JobResponseVO getJobBySkills(String skills) {
+
+		JobResponseVO jobResponseVO = new JobResponseVO();
+		List<Client> client= jobDao.findBySkills(skills);	
+		if (client == null) {
+			if(skills.equals("java")) {
+			jobResponseVO.setStatus(false);
+			jobResponseVO.setMessage("profile does not exist");
+			jobResponseVO.setData(null);
+		} }
+		else {
+			jobResponseVO.setStatus(true);
+			jobResponseVO.setMessage("success");
+			jobResponseVO.setData(client);
+		}
+		return jobResponseVO;
+		
+
+}
 }

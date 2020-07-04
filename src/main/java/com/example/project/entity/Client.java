@@ -3,6 +3,7 @@ package com.example.project.entity;
 
 import java.sql.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,20 +14,48 @@ import javax.persistence.Table;
 public class Client {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int id;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "email")
 	private String email;
+	
+	@Column(name = "gender")
 	private String gender;
+	
+	@Column(name = "number")
 	private String number;
+	
+	@Column(name = "profession")
 	private String profession;
+	
+	@Column(name = "location")
 	private String location;
+	
+	@Column(name = "whatsAppNumber")
 	private String whatsAppNumber;
+	
+	@Column(name = "married")
 	private boolean married;
+	
+	@Column(name = "skills")
 	private String skills;
+	
+	@Column(name = "workHistory")
 	private String workHistory;
+	
+	@Column(name = "education")
 	private String education;
+	
+	@Column(name = "socailLink")
 	private String socailLink;
+	
+	@Column(name = "position")
 	private String position;
+	
 	public String getPosition() {
 		return position;
 	}
