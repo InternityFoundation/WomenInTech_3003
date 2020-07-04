@@ -29,8 +29,8 @@
             <form:label path="number">Phone Number:</form:label>
             <form:input path="number"/><br/>      
  
-            <form:label path="whatsnumber">WhatsApp Number(If Available)</form:label>
-            <form:input path="whatsnumber"/><br/>
+            <form:label path="whatsAppNumber">WhatsApp Number(If Available)</form:label>
+            <form:input path="whatsAppNumber"/><br/>
              
             <form:label path="gender">Gender:</form:label>
             <form:radiobutton path="gender" value="Male"/>Male
@@ -43,8 +43,8 @@
             <form:label path="married">Married?</form:label>
             <form:checkbox path="married"/><br/>
              
-            <form:label path="Location">Location</form:label>
-            <form:input path="Location" /><br/>
+            <form:label path="location">Location</form:label>
+            <form:input path="location" /><br/>
                  
             <form:button>Submit</form:button>
         </form:form>

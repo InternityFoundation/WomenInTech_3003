@@ -20,7 +20,7 @@ public class Client {
 	private String number;
 	private String profession;
 	private String location;
-	private Date whatsAppNumber;
+	private String whatsAppNumber;
 	private boolean married;
 	public String getName() {
 		return name;
@@ -66,10 +66,10 @@ public class Client {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	public Date getWhatsAppNumber() {
+	public String getWhatsAppNumber() {
 		return whatsAppNumber;
 	}
-	public void setWhatsAppNumber(Date whatsAppNumber) {
+	public void setWhatsAppNumber(String whatsAppNumber) {
 		this.whatsAppNumber = whatsAppNumber;
 	}
 	@Override

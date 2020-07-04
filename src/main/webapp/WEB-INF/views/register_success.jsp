@@ -23,7 +23,7 @@
         <span>Full name:</span><span>${client.name}</span><br/>
         <span>E-mail:</span><span>${client.email}</span><br/>
         <span>Phone Number:</span><span>${client.number}</span><br/>
-        <span>WhatsApp Number:</span><span>${client.whatsnumber}</span><br/>
+        <span>WhatsApp Number:</span><span>${client.whatsAppNumber}</span><br/>
         <span>Gender:</span><span>${client.gender}</span><br/>
         <span>Profession:</span><span>${client.profession}</span><br/>
         <span>Married?:</span><span>${client.married}</span><br/>
