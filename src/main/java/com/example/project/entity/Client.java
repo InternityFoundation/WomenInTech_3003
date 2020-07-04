@@ -22,6 +22,54 @@ public class Client {
 	private String location;
 	private String whatsAppNumber;
 	private boolean married;
+	private String skills;
+	private String workHistory;
+	private String education;
+	private String socailLink;
+	private String position;
+	public String getPosition() {
+		return position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getSkills() {
+		return skills;
+	}
+	public void setSkills(String skills) {
+		this.skills = skills;
+	}
+	public String getWorkHistory() {
+		return workHistory;
+	}
+	public void setWorkHistory(String workHistory) {
+		this.workHistory = workHistory;
+	}
+	public String getEducation() {
+		return education;
+	}
+	public void setEducation(String education) {
+		this.education = education;
+	}
+	public String getSocailLink() {
+		return socailLink;
+	}
+	public void setSocailLink(String socailLink) {
+		this.socailLink = socailLink;
+	}
+	public String getExperience() {
+		return experience;
+	}
+	public void setExperience(String experience) {
+		this.experience = experience;
+	}
+	private String experience;
 	public String getName() {
 		return name;
 	}
@@ -74,14 +122,13 @@ public class Client {
 	}
 	@Override
 	public String toString() {
-		return "Client [name=" + name + ", email=" + email + ", gender=" + gender + ", number=" + number
+		return "Client [id=" + id + ", name=" + name + ", email=" + email + ", gender=" + gender + ", number=" + number
 				+ ", profession=" + profession + ", location=" + location + ", whatsAppNumber=" + whatsAppNumber
-				+ ", married=" + married + "]";
+				+ ", married=" + married + ", skills=" + skills + ", workHistory=" + workHistory + ", education="
+				+ education + ", socailLink=" + socailLink + ", position=" + position + ", experience=" + experience
+				+ "]";
 	}
 	
-	// getters...
-	// setters...
-
-	// override toString()
+	
 
 }
