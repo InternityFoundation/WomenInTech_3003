@@ -26,8 +26,7 @@ public class MvcController {
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String saveClient(@ModelAttribute("client") Client client) {
 		service.save(client);
-		 System.out.println(client);
-	     
+		System.out.println(client);
 	    return "register_success";
 	}
      @GetMapping("/register")
