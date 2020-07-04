@@ -1,13 +1,12 @@
 package com.example.project.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.project.dao.JobDao;
 import com.example.project.entity.Client;
+import com.example.project.repository.JobDao;
 import com.example.project.vo.JobResponseVO;
 
 

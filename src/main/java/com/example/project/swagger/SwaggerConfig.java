@@ -21,11 +21,11 @@ public class SwaggerConfig {
 	    }
 	private ApiInfo metaData() {
         ApiInfo apiInfo = new ApiInfo(
-                "Spring Boot REST CRUD API",
-                "Spring Boot REST API for USER DETAILS",
+                "ApI for Client Details",
+                "Spring Boot REST API for CLIENT DETAILS",
                 "4.0",
                 "Free to use",
-                new Contact("GITA GUPTA", "https://gita_gupta/about/", "gitagupta1611@gmail.com"),
+                new Contact("WomenInTech", "https://womenInTech/about/", "womenInTech@gmail.com"),
                "Apache License Version 2.0",
                 "https://www.apache.org/licenses/LICENSE-2.0");
         return apiInfo;
