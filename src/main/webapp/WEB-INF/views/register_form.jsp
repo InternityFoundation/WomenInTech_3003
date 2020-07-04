@@ -11,8 +11,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
 	<h1>Welcome to our Organizations ...</h1>
-	<br>
+	<br></div>
 	<div align="center">
 		<div class="container">
 			<div class="row">
@@ -111,9 +112,7 @@
 						<option>Data Scientist</option>
 
 					</div>
-
-
-					<br /> <br /> <br /> <br />
+					<br /> <br /> 
 					<div class="form-group center btn-btn-primary">
 						<form:button>Submit</form:button>
 					</div>

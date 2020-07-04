@@ -16,8 +16,7 @@
 </style>
 </head>
 <body>
-
-    <div align="center">
+ <div align="center">
         <h2>Registration Succeeded!</h2>
         <h3>Your details</h3>
         <span>Full name:</span><span>${client.name}</span><br/>
