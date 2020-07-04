@@ -17,6 +17,7 @@
 </head>
 <body>
  <div align="center">
+ <form action="ExamClient.jsp">
         <h2>Registration Succeeded!</h2>
         <h3>Your details</h3>
         <span>Full name:</span><span>${client.name}</span><br/>
@@ -35,6 +36,9 @@
         <span>position:</span><span>${client.position}</span><br/>
         <h4>We will get Back to you as soon as possible !</h4>
         <h4>Thank You!</h4>
+        <h4>Give your Skill Test here....</h4>
+        <button>Skill Test</button>
+        </form>
     </div>
 </body>
 </html>

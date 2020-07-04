@@ -9,7 +9,7 @@
 <body>
 <h2 style="text-align:center">ONLINE EXAMINATION</h2>
 <p>
-<a href="ExamClient2.html">Back To Main Page</a>
+<a href="ExamClient2.jsp">Back To Main Page</a>
 </p>
 <hr/>
 <%
@@ -17,8 +17,8 @@ String str1=request.getParameter("ans1");
 String str2=request.getParameter("ans2");
 String str3=request.getParameter("ans3");
 int mark=0;
-Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-Connection con=DriverManager.getConnection("jdbc:odbc:examDS");
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/userDetails", "root", "");
 Statement stmt=con.createStatement();
 ResultSet rs=stmt.executeQuery("SELECT * FROM examTab2");
 int i=1;
